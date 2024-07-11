@@ -1,9 +1,5 @@
 {
-    "version": 2,
-    "builds": [
-        { "src": "index.html", "use": "@vercel/static-build" }
-    ],
-    "routes": [
-        { "handle": "filesystem" }
-    ]
+ "rewrites": [
+     { "source": "/{.*}" , "destination": "/"}
+ ]
 }
